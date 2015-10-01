@@ -1,0 +1,15 @@
+D:\Elavon\Arquitetura\E-Book\PoC_TreeView\QueueVisualizer\QueueVisualizer\bin\Microsoft.PythonTools.WebRole.dll
+D:\Elavon\Arquitetura\E-Book\PoC_TreeView\QueueVisualizer\QueueVisualizer\obj\Debug\attach_server.py
+D:\Elavon\Arquitetura\E-Book\PoC_TreeView\QueueVisualizer\QueueVisualizer\obj\Debug\visualstudio_py_debugger.py
+D:\Elavon\Arquitetura\E-Book\PoC_TreeView\QueueVisualizer\QueueVisualizer\obj\Debug\visualstudio_py_repl.py
+D:\Elavon\Arquitetura\E-Book\PoC_TreeView\QueueVisualizer\QueueVisualizer\obj\Debug\visualstudio_py_util.py
+D:\Elavon\Arquitetura\E-Book\PoC_TreeView\QueueVisualizer\QueueVisualizer\obj\Debug\__init__.py
+D:\Elavon\Arquitetura\E-Book\PoC_TreeView\QueueVisualizer\QueueVisualizer\obj\Debug\__main__.py
+D:\Elavon\Arquitetura\E-Book\PoC_TreeView\QueueVisualizer\QueueVisualizer\bin\AzureSetup.cfg
+D:\Elavon\Arquitetura\E-Book\PoC_TreeView\QueueVisualizer\QueueVisualizer\bin\Microsoft.PythonTools.AzureSetup.exe
+D:\Elavon\Arquitetura\E-Book\PoC_TreeView\QueueVisualizer\QueueVisualizer\bin\Microsoft.PythonTools.AzureSetup.exe.config
+D:\Elavon\Arquitetura\E-Book\PoC_TreeView\QueueVisualizer\QueueVisualizer\bin\wfastcgi.py
+D:\Elavon\Arquitetura\E-Book\PoC_TreeView\QueueVisualizer\QueueVisualizer\obj\Debug\deployment-updated-orig-prefix.txt
+D:\Elavon\Arquitetura\E-Book\PoC_TreeView\QueueVisualizer\QueueVisualizer\ptvs_virtualenv_proxy.py
+D:\Elavon\Arquitetura\E-Book\PoC_TreeView\QueueVisualizer\QueueVisualizer\obj\Debug\web.config
+D:\Elavon\Arquitetura\E-Book\PoC_TreeView\QueueVisualizer\QueueVisualizer\obj\Debug\web.debug.config

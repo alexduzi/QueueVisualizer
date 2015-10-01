@@ -1,0 +1,5 @@
+D:\Elavon\Arquitetura\E-Book\PoC_TreeView\QueueVisualizer\QueueVisualizer.SoapService\bin\Release\QueueVisualizer.SoapService.dll.config
+D:\Elavon\Arquitetura\E-Book\PoC_TreeView\QueueVisualizer\QueueVisualizer.SoapService\bin\Release\QueueVisualizer.SoapService.dll
+D:\Elavon\Arquitetura\E-Book\PoC_TreeView\QueueVisualizer\QueueVisualizer.SoapService\bin\Release\QueueVisualizer.SoapService.pdb
+D:\Elavon\Arquitetura\E-Book\PoC_TreeView\QueueVisualizer\QueueVisualizer.SoapService\obj\Release\QueueVisualizer.SoapService.dll
+D:\Elavon\Arquitetura\E-Book\PoC_TreeView\QueueVisualizer\QueueVisualizer.SoapService\obj\Release\QueueVisualizer.SoapService.pdb

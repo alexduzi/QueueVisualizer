@@ -1,0 +1,12 @@
+D:\Elavon\Arquitetura\E-Book\PoC_TreeView\QueueVisualizer\QueueVisualizer.SoapService\obj\Debug\QueueVisualizer.SoapService.csprojResolveAssemblyReference.cache
+D:\Elavon\Arquitetura\E-Book\PoC_TreeView\QueueVisualizer\QueueVisualizer.SoapService\bin\Debug\QueueVisualizer.SoapService.dll.config
+D:\Elavon\Arquitetura\E-Book\PoC_TreeView\QueueVisualizer\QueueVisualizer.SoapService\bin\Debug\QueueVisualizer.SoapService.dll
+D:\Elavon\Arquitetura\E-Book\PoC_TreeView\QueueVisualizer\QueueVisualizer.SoapService\bin\Debug\QueueVisualizer.SoapService.pdb
+D:\Elavon\Arquitetura\E-Book\PoC_TreeView\QueueVisualizer\QueueVisualizer.SoapService\obj\Debug\QueueVisualizer.SoapService.dll
+D:\Elavon\Arquitetura\E-Book\PoC_TreeView\QueueVisualizer\QueueVisualizer.SoapService\obj\Debug\QueueVisualizer.SoapService.pdb
+C:\Users\aduzi\Documents\Visual Studio 2012\Projects\QueueVisualizer\QueueVisualizer.SoapService\bin\Debug\QueueVisualizer.SoapService.dll.config
+C:\Users\aduzi\Documents\Visual Studio 2012\Projects\QueueVisualizer\QueueVisualizer.SoapService\bin\Debug\QueueVisualizer.SoapService.dll
+C:\Users\aduzi\Documents\Visual Studio 2012\Projects\QueueVisualizer\QueueVisualizer.SoapService\bin\Debug\QueueVisualizer.SoapService.pdb
+C:\Users\aduzi\Documents\Visual Studio 2012\Projects\QueueVisualizer\QueueVisualizer.SoapService\obj\Debug\QueueVisualizer.SoapService.csprojResolveAssemblyReference.cache
+C:\Users\aduzi\Documents\Visual Studio 2012\Projects\QueueVisualizer\QueueVisualizer.SoapService\obj\Debug\QueueVisualizer.SoapService.dll
+C:\Users\aduzi\Documents\Visual Studio 2012\Projects\QueueVisualizer\QueueVisualizer.SoapService\obj\Debug\QueueVisualizer.SoapService.pdb

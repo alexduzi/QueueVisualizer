@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="60392154-766f-4e6f-aff6-36f1b15857e3" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:6668/QueueService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="QueueService.xsd" MetadataType="Schema" ID="2934ce46-e614-4c89-8966-826fd606633f" SourceId="1" SourceUrl="http://localhost:6668/QueueService.svc?xsd=xsd0" />
+    <MetadataFile FileName="QueueService1.xsd" MetadataType="Schema" ID="802b8ff5-cff5-419e-aafd-a214ba08541c" SourceId="1" SourceUrl="http://localhost:6668/QueueService.svc?xsd=xsd2" />
+    <MetadataFile FileName="QueueService.wsdl" MetadataType="Wsdl" ID="36eff1dc-be09-4251-b26d-426104f360ed" SourceId="1" SourceUrl="http://localhost:6668/QueueService.svc?wsdl" />
+    <MetadataFile FileName="QueueService2.xsd" MetadataType="Schema" ID="6c1e3335-998d-4ba7-9ff5-8a177c23403a" SourceId="1" SourceUrl="http://localhost:6668/QueueService.svc?xsd=xsd1" />
+    <MetadataFile FileName="QueueService.disco" MetadataType="Disco" ID="b0b2a592-0277-47d1-906e-ecd06cd19902" SourceId="1" SourceUrl="http://localhost:6668/QueueService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

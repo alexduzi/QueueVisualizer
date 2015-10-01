@@ -1,0 +1,16 @@
+D:\Elavon\Arquitetura\E-Book\PoC_TreeView\QueueVisualizer\QueueVisualizer.HostConsole\bin\Debug\QueueVisualizer.HostConsole.exe.config
+D:\Elavon\Arquitetura\E-Book\PoC_TreeView\QueueVisualizer\QueueVisualizer.HostConsole\bin\Debug\QueueVisualizer.HostConsole.exe
+D:\Elavon\Arquitetura\E-Book\PoC_TreeView\QueueVisualizer\QueueVisualizer.HostConsole\bin\Debug\QueueVisualizer.HostConsole.pdb
+D:\Elavon\Arquitetura\E-Book\PoC_TreeView\QueueVisualizer\QueueVisualizer.HostConsole\bin\Debug\WcfService1.dll
+D:\Elavon\Arquitetura\E-Book\PoC_TreeView\QueueVisualizer\QueueVisualizer.HostConsole\bin\Debug\WcfService1.pdb
+D:\Elavon\Arquitetura\E-Book\PoC_TreeView\QueueVisualizer\QueueVisualizer.HostConsole\obj\Debug\QueueVisualizer.HostConsole.csprojResolveAssemblyReference.cache
+D:\Elavon\Arquitetura\E-Book\PoC_TreeView\QueueVisualizer\QueueVisualizer.HostConsole\obj\Debug\QueueVisualizer.HostConsole.exe
+D:\Elavon\Arquitetura\E-Book\PoC_TreeView\QueueVisualizer\QueueVisualizer.HostConsole\obj\Debug\QueueVisualizer.HostConsole.pdb
+C:\Users\aduzi\Documents\Visual Studio 2012\Projects\QueueVisualizer\QueueVisualizer.HostConsole\bin\Debug\QueueVisualizer.HostConsole.exe.config
+C:\Users\aduzi\Documents\Visual Studio 2012\Projects\QueueVisualizer\QueueVisualizer.HostConsole\obj\Debug\QueueVisualizer.HostConsole.exe
+C:\Users\aduzi\Documents\Visual Studio 2012\Projects\QueueVisualizer\QueueVisualizer.HostConsole\obj\Debug\QueueVisualizer.HostConsole.pdb
+C:\Users\aduzi\Documents\Visual Studio 2012\Projects\QueueVisualizer\QueueVisualizer.HostConsole\obj\Debug\QueueVisualizer.HostConsole.csprojResolveAssemblyReference.cache
+C:\Users\aduzi\Documents\Visual Studio 2012\Projects\QueueVisualizer\QueueVisualizer.HostConsole\bin\Debug\QueueVisualizer.HostConsole.exe
+C:\Users\aduzi\Documents\Visual Studio 2012\Projects\QueueVisualizer\QueueVisualizer.HostConsole\bin\Debug\QueueVisualizer.HostConsole.pdb
+C:\Users\aduzi\Documents\Visual Studio 2012\Projects\QueueVisualizer\QueueVisualizer.HostConsole\bin\Debug\QueueVisualizer.SoapService.dll
+C:\Users\aduzi\Documents\Visual Studio 2012\Projects\QueueVisualizer\QueueVisualizer.HostConsole\bin\Debug\QueueVisualizer.SoapService.pdb
