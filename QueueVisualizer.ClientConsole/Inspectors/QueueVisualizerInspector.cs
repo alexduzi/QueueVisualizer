@@ -16,7 +16,8 @@ namespace QueueVisualizer.ClientConsole.Inspectors
 
     public object BeforeSendRequest(ref System.ServiceModel.Channels.Message request, System.ServiceModel.IClientChannel channel)
     {
-      return request.GetBody<QueueOperationRequest>();
+      //Console.WriteLine(request.GetReaderAtBodyContents());
+      return request;
     }
   }
 }

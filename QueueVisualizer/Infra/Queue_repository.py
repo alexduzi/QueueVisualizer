@@ -7,7 +7,7 @@ class Queue_repository(object):
 
     def get_public_queues(self, ):
         client = SoapClient(wsdl= self.wsdl, trace=False)
-        response = client.(a=1,b=2)
+        #response = client.(a=1,b=2)
         result = response['AddResult']
 
     def get_private_queues():
