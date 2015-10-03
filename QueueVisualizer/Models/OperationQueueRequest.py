@@ -1,9 +1,10 @@
-﻿class OperationQueueRequest(object):
+﻿from Models import Queue
+
+class OperationQueueRequest(object):
     """description of class"""
     
     def __init__(self, isPublic, queueName):
-        self.isPublic = isPublic
-        self.queueName = queueName
+        self.queue = Queue(queueName, 0, isPublic)
 
 
 

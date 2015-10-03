@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="g7cAD21p8ohA3GVZL0gk7Fiij0I=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="LZJCbMRQ3/DnkEP2IxSx78wVkxg=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="BasicHttpBinding_IQueueServiceContract">
       <properties>
@@ -112,10 +112,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="BasicHttpBinding_IQueueServiceContract" contract="QueueService.IQueueServiceContract" bindingType="basicHttpBinding" address="http://localhost:6668/QueueService.svc" bindingConfiguration="BasicHttpBinding_IQueueServiceContract">
+    <endpoint name="BasicHttpBinding_IQueueServiceContract" contract="QueueService.IQueueServiceContract" bindingType="basicHttpBinding" address="http://localhost:7789/QueueService.svc" bindingConfiguration="BasicHttpBinding_IQueueServiceContract">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://localhost:6668/QueueService.svc</serializedValue>
+          <serializedValue>http://localhost:7789/QueueService.svc</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />

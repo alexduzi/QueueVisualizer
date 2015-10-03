@@ -19,14 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:6668/QueueService.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:7789/QueueService.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="QueueService.xsd" MetadataType="Schema" ID="2934ce46-e614-4c89-8966-826fd606633f" SourceId="1" SourceUrl="http://localhost:6668/QueueService.svc?xsd=xsd0" />
-    <MetadataFile FileName="QueueService1.xsd" MetadataType="Schema" ID="802b8ff5-cff5-419e-aafd-a214ba08541c" SourceId="1" SourceUrl="http://localhost:6668/QueueService.svc?xsd=xsd2" />
-    <MetadataFile FileName="QueueService.wsdl" MetadataType="Wsdl" ID="36eff1dc-be09-4251-b26d-426104f360ed" SourceId="1" SourceUrl="http://localhost:6668/QueueService.svc?wsdl" />
-    <MetadataFile FileName="QueueService2.xsd" MetadataType="Schema" ID="6c1e3335-998d-4ba7-9ff5-8a177c23403a" SourceId="1" SourceUrl="http://localhost:6668/QueueService.svc?xsd=xsd1" />
-    <MetadataFile FileName="QueueService.disco" MetadataType="Disco" ID="b0b2a592-0277-47d1-906e-ecd06cd19902" SourceId="1" SourceUrl="http://localhost:6668/QueueService.svc?disco" />
+    <MetadataFile FileName="QueueService1.wsdl" MetadataType="Wsdl" ID="9e781b4b-601c-48a0-a0f2-c3097046815e" SourceId="1" SourceUrl="http://localhost:7789/QueueService.svc?wsdl" />
+    <MetadataFile FileName="QueueService3.xsd" MetadataType="Schema" ID="a4d97d76-6933-4359-83bc-c6fede9c0c91" SourceId="1" SourceUrl="http://localhost:7789/QueueService.svc?xsd=xsd1" />
+    <MetadataFile FileName="QueueService31.xsd" MetadataType="Schema" ID="64dbd26d-271b-4c24-98ad-c01e88abe4c7" SourceId="1" SourceUrl="http://localhost:7789/QueueService.svc?xsd=xsd2" />
+    <MetadataFile FileName="QueueService32.xsd" MetadataType="Schema" ID="84e009cb-5df0-494c-90d8-7c75c47c645f" SourceId="1" SourceUrl="http://localhost:7789/QueueService.svc?xsd=xsd0" />
+    <MetadataFile FileName="QueueService1.disco" MetadataType="Disco" ID="b55f1525-8574-4a52-8501-6008b135a124" SourceId="1" SourceUrl="http://localhost:7789/QueueService.svc?disco" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

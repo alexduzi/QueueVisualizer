@@ -56,16 +56,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="Properties\DataSources\QueueVisualizer.SoapService.Models.QueueOperationResponse.datasource" />
-    <None Include="Service References\QueueService\QueueService.wsdl" />
-    <None Include="Service References\QueueService\QueueService.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\QueueService\QueueService1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\QueueService\QueueService2.xsd">
-      <SubType>Designer</SubType>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
@@ -74,15 +64,22 @@
     <WCFMetadataStorage Include="Service References\QueueService\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\QueueService\QueueService.disco" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Service References\QueueService\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\QueueService\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Service References\QueueService\QueueService1.wsdl" />
+    <None Include="Service References\QueueService\QueueService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\QueueService\QueueService31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\QueueService\QueueService32.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\QueueService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
@@ -93,6 +90,9 @@
       <Project>{15b3e0d2-6217-493a-a690-158c497f5318}</Project>
       <Name>QueueVisualizer.SoapService</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\QueueService\QueueService1.disco" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
