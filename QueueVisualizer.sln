@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "QueueVisualizer", "QueueVisualizer\QueueVisualizer.pyproj", "{A42AB9B2-89D6-44DF-9BD0-65A48A972D1D}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueVisualizer.ClientConsole", "QueueVisualizer.ClientConsole\QueueVisualizer.ClientConsole.csproj", "{14ECDD90-CEF8-4FC9-8F1D-C7B6436A9E2A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueVisualizer.HostConsole", "QueueVisualizer.HostConsole\QueueVisualizer.HostConsole.csproj", "{7A6DC024-84EB-4E25-A60B-B81C7131E87A}"
@@ -13,16 +11,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueVisualizer.SoapService
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "QueueVisualizer.PythonCommandLine", "QueueVisualizer.PythonCommandLine\QueueVisualizer.PythonCommandLine.pyproj", "{0C3DF17A-2499-47D1-8C09-14A669C9469D}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "QueueVisualizer.Web", "QueueVisualizer.Web\QueueVisualizer.Web.pyproj", "{4BC88043-2FFF-4C42-B015-8ECAF771967D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A42AB9B2-89D6-44DF-9BD0-65A48A972D1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A42AB9B2-89D6-44DF-9BD0-65A48A972D1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A42AB9B2-89D6-44DF-9BD0-65A48A972D1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A42AB9B2-89D6-44DF-9BD0-65A48A972D1D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{14ECDD90-CEF8-4FC9-8F1D-C7B6436A9E2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{14ECDD90-CEF8-4FC9-8F1D-C7B6436A9E2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14ECDD90-CEF8-4FC9-8F1D-C7B6436A9E2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -37,6 +33,10 @@ Global
 		{BAE463FD-E5CB-4989-935C-0EB1AFBC7A45}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0C3DF17A-2499-47D1-8C09-14A669C9469D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0C3DF17A-2499-47D1-8C09-14A669C9469D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BC88043-2FFF-4C42-B015-8ECAF771967D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BC88043-2FFF-4C42-B015-8ECAF771967D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BC88043-2FFF-4C42-B015-8ECAF771967D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BC88043-2FFF-4C42-B015-8ECAF771967D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
