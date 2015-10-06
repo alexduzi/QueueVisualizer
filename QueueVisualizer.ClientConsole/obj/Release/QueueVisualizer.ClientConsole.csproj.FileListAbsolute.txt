@@ -1,0 +1,10 @@
+C:\Users\Duzi\Documents\Visual Studio 2013\Projects\QueueVisualizer\QueueVisualizer.ClientConsole\bin\Release\QueueVisualizer.ClientConsole.exe.config
+C:\Users\Duzi\Documents\Visual Studio 2013\Projects\QueueVisualizer\QueueVisualizer.ClientConsole\bin\Release\QueueService.svc
+C:\Users\Duzi\Documents\Visual Studio 2013\Projects\QueueVisualizer\QueueVisualizer.ClientConsole\bin\Release\QueueService.svc.cs
+C:\Users\Duzi\Documents\Visual Studio 2013\Projects\QueueVisualizer\QueueVisualizer.ClientConsole\bin\Release\QueueVisualizer.ClientConsole.exe
+C:\Users\Duzi\Documents\Visual Studio 2013\Projects\QueueVisualizer\QueueVisualizer.ClientConsole\bin\Release\QueueVisualizer.ClientConsole.pdb
+C:\Users\Duzi\Documents\Visual Studio 2013\Projects\QueueVisualizer\QueueVisualizer.ClientConsole\bin\Release\QueueVisualizer.SoapService.dll
+C:\Users\Duzi\Documents\Visual Studio 2013\Projects\QueueVisualizer\QueueVisualizer.ClientConsole\bin\Release\QueueVisualizer.SoapService.pdb
+C:\Users\Duzi\Documents\Visual Studio 2013\Projects\QueueVisualizer\QueueVisualizer.ClientConsole\obj\Release\QueueVisualizer.ClientConsole.csprojResolveAssemblyReference.cache
+C:\Users\Duzi\Documents\Visual Studio 2013\Projects\QueueVisualizer\QueueVisualizer.ClientConsole\obj\Release\QueueVisualizer.ClientConsole.exe
+C:\Users\Duzi\Documents\Visual Studio 2013\Projects\QueueVisualizer\QueueVisualizer.ClientConsole\obj\Release\QueueVisualizer.ClientConsole.pdb

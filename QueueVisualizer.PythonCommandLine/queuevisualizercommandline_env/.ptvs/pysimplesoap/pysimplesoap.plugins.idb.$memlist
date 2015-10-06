@@ -1,0 +1,15 @@
+datetime
+__author__
+WSSE
+os
+Decimal
+unicode_literals
+warnings
+hashlib
+__copyright__
+__license__
+logging
+basestring
+__version__
+sys
+unicode

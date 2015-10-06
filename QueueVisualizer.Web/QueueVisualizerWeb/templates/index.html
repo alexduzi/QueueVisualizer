@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+
+    <ul>
+        {% for queue in queueResult.queues %}
+            <li><a href="{{ queue.queueName }}">{{ queue.queueName }}</a></li>
+        {% endfor %}
+    </ul>
+    
+
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="QueueVisualizer.SoapService.QueueService" CodeBehind="QueueService.svc.cs" %>
