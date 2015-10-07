@@ -3,8 +3,8 @@
 var QueueNS = QueueNS || {};
 
 QueueNS.URLS = {
-    GET_ALL_URL: "./home",
-    PURGE_URL: "./purge"
+    GET_ALL_URL: "/home",
+    PURGE_URL: "/purge"
 };
 
 QueueNS.QueueServiceHelper = function () {
@@ -22,7 +22,7 @@ QueueNS.QueueServiceHelper = function () {
 
 
     function getAll(url, filterData, success, error) {
-        ajaxRequest(url, { filters: filterData }, "GET", success, error)
+        ajaxRequest(url, filterData, "GET", success, error)
     };
 
     function purgeQueue(url, queues, success, error) {

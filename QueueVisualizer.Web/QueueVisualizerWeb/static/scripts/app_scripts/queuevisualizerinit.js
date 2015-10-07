@@ -40,10 +40,7 @@ function searchClickMechanism() {
         var self = $(this);
         self.button('loading');
 
-        var filterData = {
-            isPublic: $('#txtQueueName').text(),
-            queueName: $('#chkIsPublic').is(':checked')
-        };
+        var filterData = $("#searchForm").serialize();
 
         var queueServiceHelper = new QueueNS.QueueServiceHelper();
         queueServiceHelper.getAll(QueueNS.URLS.GET_ALL_URL, filterData, function () {

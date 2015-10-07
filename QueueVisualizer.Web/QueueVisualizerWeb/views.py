@@ -3,17 +3,21 @@ Routes and views for the flask application.
 """
 
 from datetime import datetime
-from flask import render_template
+from flask import render_template, request 
 from QueueVisualizerWeb import app
 from Infra.Queue_repository import Queue_repository as Repository
 from Models import OperationQueueRequest, OperationQueueResponse, Queue
 
-QUEUE_SERVICE = 'http://localhost:7789/QueueService.svc?wsdl'
+QUEUE_SERVICE = 'http://localhost:6668/QueueService.svc?wsdl'
 
 @app.route('/')
-@app.route('/home/<filters>')
-def home(filters = None):
+@app.route('/home')
+def home():
     """Renders the home page."""
+
+    if request.form:
+        queueName = request.form['txtQueueName']
+        isPublic = request.form['chkIsPublic']
 
     repo = Repository(QUEUE_SERVICE)
     operationRequest = OperationQueueRequest(False, '') 
