@@ -2,17 +2,81 @@
 
 {% block content %}
 
-<div class="jumbotron">
+<fieldset>
+    <legend>Filters:</legend>
+    <div class="row">
+        <div class="col-sm-1">
+            <strong>Queue Name: </strong>
+            <input type="text" id="txtQueueName"/>
+        </div>
+        <div class="col-sm-2">
+            <strong>Is Public Queue?: </strong>
+            <input type="checkbox" id="chkIsPublic" />
+        </div>
+    </div>
+</fieldset>
 
-    <ul>
-        {% for queue in queueResult.queues %}
-            <li><a href="{{ queue.queueName }}">{{ queue.queueName }}</a></li>
-        {% endfor %}
-    </ul>
-    
+<div class="btn-group">
+    <button type="button" id="btnSearch" class="btn btn-default">Search</button>
+    <button type="button" id="btnPurge" class="btn btn-default">Purge</button>
+</div>
+
+<div class="table-responsive">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th><input type="checkbox" name="" class="checkbox-inline" value="" data-selectall="true" /> </th>
+                <th>Queue Name</th>
+                <th>Qty Messages</th>
+                <th>Is Public Queue?</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for queue in queueResult.queues %}
+
+            <tr>
+                <td>
+                    <input type="checkbox" name="" value="" class="checkbox-inline" data-chkline="true" />
+                </td>
+                <td>
+                    {{ queue.queueName }}
+                </td>
+                <td>
+                    {{ queue.qtyMsg }}
+                </td>
+                <td>
+                    {{ queue.isPublic }}
+                </td>
+            </tr>
+
+            {% endfor %}
+        </tbody>
+    </table>
 
 </div>
 
+<!-- Modal content-->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="padding:35px 50px;">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body" style="padding:40px 50px;">
+                <strong id="msgModal"></strong>
+            </div>
+            <div class="modal-footer">
+
+            </div>
+        </div>
+        </div>
+</div>
+        {% endblock %}
 
 
-{% endblock %}
+        {% block scripts %}
+
+        <script src="/static/scripts/app_scripts/servicehelper.js"></script>
+        <script src="/static/scripts/app_scripts/queuevisualizerinit.js"></script>
+
+        {% endblock %}

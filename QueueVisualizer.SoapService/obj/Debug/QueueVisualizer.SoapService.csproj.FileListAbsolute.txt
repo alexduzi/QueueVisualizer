@@ -5,3 +5,4 @@ C:\Users\Duzi\Documents\Visual Studio 2013\Projects\QueueVisualizer\QueueVisuali
 C:\Users\Duzi\Documents\Visual Studio 2013\Projects\QueueVisualizer\QueueVisualizer.SoapService\obj\Debug\QueueVisualizer.SoapService.pdb
 C:\Users\Duzi\Documents\Visual Studio 2013\Projects\QueueVisualizer\QueueVisualizer.SoapService\bin\QueueService.svc
 C:\Users\Duzi\Documents\Visual Studio 2013\Projects\QueueVisualizer\QueueVisualizer.SoapService\bin\QueueService.svc.cs
+C:\Users\Duzi\Documents\Visual Studio 2013\Projects\QueueVisualizer\QueueVisualizer.SoapService\obj\Debug\QueueVisualizer.SoapService.csprojResolveAssemblyReference.cache

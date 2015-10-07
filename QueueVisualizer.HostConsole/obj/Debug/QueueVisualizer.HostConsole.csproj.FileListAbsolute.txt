@@ -22,3 +22,5 @@ C:\Users\Duzi\Documents\Visual Studio 2013\Projects\QueueVisualizer\QueueVisuali
 C:\Users\Duzi\Documents\Visual Studio 2013\Projects\QueueVisualizer\QueueVisualizer.HostConsole\obj\Debug\QueueVisualizer.HostConsole.csprojResolveAssemblyReference.cache
 C:\Users\Duzi\Documents\Visual Studio 2013\Projects\QueueVisualizer\QueueVisualizer.HostConsole\obj\Debug\QueueVisualizer.HostConsole.exe
 C:\Users\Duzi\Documents\Visual Studio 2013\Projects\QueueVisualizer\QueueVisualizer.HostConsole\obj\Debug\QueueVisualizer.HostConsole.pdb
+C:\Users\Duzi\Documents\Visual Studio 2013\Projects\QueueVisualizer\QueueVisualizer.HostConsole\bin\Debug\QueueService.svc
+C:\Users\Duzi\Documents\Visual Studio 2013\Projects\QueueVisualizer\QueueVisualizer.HostConsole\bin\Debug\QueueService.svc.cs

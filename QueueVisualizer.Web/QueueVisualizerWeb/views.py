@@ -11,8 +11,8 @@ from Models import OperationQueueRequest, OperationQueueResponse, Queue
 QUEUE_SERVICE = 'http://localhost:7789/QueueService.svc?wsdl'
 
 @app.route('/')
-@app.route('/home')
-def home():
+@app.route('/home/<filters>')
+def home(filters = None):
     """Renders the home page."""
 
     repo = Repository(QUEUE_SERVICE)
@@ -26,8 +26,8 @@ def home():
         queueResult = result
     )
 
-@app.route('/purge')
-def purge():
+@app.route('/purge/<queues>')
+def purge(queues):
     """Renders the home page."""
 
     repo = Repository(QUEUE_SERVICE)

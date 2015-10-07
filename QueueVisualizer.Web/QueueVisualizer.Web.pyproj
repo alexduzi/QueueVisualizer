@@ -48,9 +48,12 @@
     <Folder Include="QueueVisualizerWeb\static\content\" />
     <Folder Include="QueueVisualizerWeb\static\fonts\" />
     <Folder Include="QueueVisualizerWeb\static\scripts\" />
+    <Folder Include="QueueVisualizerWeb\static\scripts\app_scripts\" />
     <Folder Include="QueueVisualizerWeb\templates\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="QueueVisualizerWeb\static\scripts\app_scripts\queuevisualizerinit.js" />
+    <Content Include="QueueVisualizerWeb\static\scripts\app_scripts\servicehelper.js" />
     <Content Include="requirements.txt" />
     <Content Include="QueueVisualizerWeb\static\content\bootstrap.css" />
     <Content Include="QueueVisualizerWeb\static\content\bootstrap.min.css" />
