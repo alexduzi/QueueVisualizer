@@ -3,45 +3,9 @@ $(function () {
 
     selectAllMechanism();
 
-    var queueServiceHelper = new QueueNS.QueueServiceHelper();
-    
-    $("#btnPurge").click(function () {
+    purgeClickMechanism();
 
-        var queues = [];
-        var selectedQueues = $("input[data-chkline='true']:checked");
-        if (selectedQueues.length == 0) {
-            showModal("You need to select an queue!");
-            return false;
-        }
-
-        selectedQueues.each(function (index, element) {
-
-            var elementChk = $(element);
-            
-        });
-
-        queueServiceHelper.purgeQueue(QueueNS.URLS.GET_ALL_URL, queues, function (){
-            successPurge();
-            $(this).button('reset');
-        },
-        function () {
-            errorPurge();
-            $(this).button('reset');
-        });
-
-        $(this).button('loading');
-    });
-
-    $("#btnSearch").click(function () {
-        queueServiceHelper.getAll('', null, function () {
-            successGetAll();
-            $(this).button('reset');
-        }, function () {
-            errorGetAll();
-            $(this).button('reset');
-        });
-        $(this).button('loading');
-    });
+    searchClickMechanism();
 
 });
 
@@ -67,6 +31,67 @@ function successGetAll(){
 
 function errorGetAll(){
 
+
+}
+
+function searchClickMechanism() {
+
+    $("#btnSearch").click(function () {
+        var self = $(this);
+        self.button('loading');
+
+        var filterData = {
+            isPublic: $('#txtQueueName').text(),
+            queueName: $('#chkIsPublic').is(':checked')
+        };
+
+        var queueServiceHelper = new QueueNS.QueueServiceHelper();
+        queueServiceHelper.getAll(QueueNS.URLS.GET_ALL_URL, filterData, function () {
+            successGetAll();
+            self.button('reset');
+
+        }, function () {
+            errorGetAll();
+            self.button('reset');
+
+        });
+
+    });
+
+}
+
+function purgeClickMechanism() {
+
+    $("#btnPurge").click(function () {
+        var self = $(this);
+        self.button('loading');
+        var queues = [];
+
+        var selectedQueues = $("input[data-chkline='true']:checked");
+        if (selectedQueues.length == 0) {
+            showModal("You need to select an queue!");
+            self.button('reset');
+            return false;
+        }
+
+        selectedQueues.each(function (index, element) {
+
+            var elementChk = $(element);
+
+        });
+
+        var queueServiceHelper = new QueueNS.QueueServiceHelper();
+        queueServiceHelper.purgeQueue(QueueNS.URLS.PURGE_URL, queues, function () {
+            successPurge();
+            self.button('reset');
+        },
+        function () {
+            errorPurge();
+            self.button('reset');
+        });
+
+        
+    });
 
 }
 

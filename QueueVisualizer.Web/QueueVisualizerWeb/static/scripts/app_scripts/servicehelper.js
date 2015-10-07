@@ -3,7 +3,7 @@
 var QueueNS = QueueNS || {};
 
 QueueNS.URLS = {
-    GET_ALL_URL: "",
+    GET_ALL_URL: "./home",
     PURGE_URL: "./purge"
 };
 
