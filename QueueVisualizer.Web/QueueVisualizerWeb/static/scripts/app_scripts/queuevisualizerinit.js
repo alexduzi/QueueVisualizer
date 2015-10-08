@@ -16,22 +16,28 @@ function showModal(msg) {
 
 function successPurge(){
 
-
+    $("#btnSearch").button('reset');
 }
 
 function errorPurge(){
 
-
+    $("#btnSearch").button('reset');
 }
 
-function successGetAll(){
-
-
+function successGetAll(data, textStatus, jqXHR) {
+    console.log(data);
+    $("#btnSearch").button('reset');
 }
 
-function errorGetAll(){
+function successGetAll(data) {
+    console.log(data);
+    document.write(data);
+    $("#btnSearch").button('reset');
+}
 
-
+function errorGetAll(jqXHR, textStatus, errorThrown) {
+    console.log(errorThrown);
+    $("#btnSearch").button('reset');
 }
 
 function searchClickMechanism() {
@@ -40,18 +46,13 @@ function searchClickMechanism() {
         var self = $(this);
         self.button('loading');
 
-        var filterData = $("#searchForm").serialize();
+        var filterData = {
+            txtQueueName: $('#txtQueueName').val(),
+            chkIsPublic: $('#chkIsPublic').is(':checked')
+        };
 
         var queueServiceHelper = new QueueNS.QueueServiceHelper();
-        queueServiceHelper.getAll(QueueNS.URLS.GET_ALL_URL, filterData, function () {
-            successGetAll();
-            self.button('reset');
-
-        }, function () {
-            errorGetAll();
-            self.button('reset');
-
-        });
+        queueServiceHelper.getAllFormSubmission($("#searchForm"), filterData, 'GET', successGetAll, null);
 
     });
 
@@ -78,16 +79,8 @@ function purgeClickMechanism() {
         });
 
         var queueServiceHelper = new QueueNS.QueueServiceHelper();
-        queueServiceHelper.purgeQueue(QueueNS.URLS.PURGE_URL, queues, function () {
-            successPurge();
-            self.button('reset');
-        },
-        function () {
-            errorPurge();
-            self.button('reset');
-        });
+        queueServiceHelper.purgeQueue(QueueNS.URLS.PURGE_URL, queues, successPurge, errorPurge);
 
-        
     });
 
 }

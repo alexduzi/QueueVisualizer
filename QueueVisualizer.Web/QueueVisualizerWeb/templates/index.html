@@ -5,7 +5,7 @@
 <br />
 <fieldset>
     <strong>Filters: </strong>
-    <form id="searchForm" role="form" class="form-horizontal">
+    <form id="searchForm" action="/home" role="form" class="form-horizontal">
         <div class="form-group">
             <label class="control-label col-sm-2" for="email">Queue Name:</label>
             <div class="col-sm-10">
@@ -18,14 +18,12 @@
                 <input type="checkbox" class="form-control" id="chkIsPublic">
             </div>
         </div>
+        <button type="submit" id="btnSearch" class="btn btn-default">Search</button>
     </form>
 </fieldset>
 <br />
 
-<div class="btn-group">
-    <button type="button" id="btnSearch" class="btn btn-default">Search</button>
-    <button type="button" id="btnPurge" class="btn btn-default">Purge</button>
-</div>
+<button type="button" id="btnPurge" class="btn btn-default">Purge</button>
 <br />
 
 <div class="table-responsive">

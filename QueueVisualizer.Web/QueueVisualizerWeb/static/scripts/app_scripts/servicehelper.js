@@ -15,11 +15,44 @@ QueueNS.QueueServiceHelper = function () {
             data: data,
             dataType: "application/json",
             method: method,
-            success: success,
-            error: error
+            success: function (data, textStatus, jqXHR) {
+                success(data, textStatus, jqXHR)
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                error(jqXHR, textStatus, errorThrown)
+            }
         });
     };
 
+    function ajaxRequestToFormSubmission(form, data, method, success, error) {
+        form.submit(function (event) {
+            event.preventDefault();
+
+            var $form = $(this),
+                url = $form.attr('action');
+            
+            var posting;
+
+            if (method === 'GET') {
+                posting = $.get(url, data);
+            }
+            else {
+                posting = $.get(url, data);
+            }
+
+            posting.done(function (data) {
+                success(data);
+            });
+
+            posting.error(function (data) {
+                error(data);
+            });
+        });
+    };
+
+    function getAllFormSubmission(form, data, method, success, error) {
+        ajaxRequestToFormSubmission(form, data, method, success, error);
+    };
 
     function getAll(url, filterData, success, error) {
         ajaxRequest(url, filterData, "GET", success, error)
@@ -31,7 +64,8 @@ QueueNS.QueueServiceHelper = function () {
 
     return {
         getAll: getAll,
-        purgeQueue: purgeQueue
+        purgeQueue: purgeQueue,
+        getAllFormSubmission: getAllFormSubmission
     };
 
 };

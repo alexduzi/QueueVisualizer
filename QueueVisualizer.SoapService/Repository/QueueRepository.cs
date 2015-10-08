@@ -28,15 +28,31 @@ namespace QueueVisualizer.SoapService.Repository
       else
         queues = MessageQueue.GetPublicQueues();
 
-      foreach (MessageQueue queue in queues)
+      if(!string.IsNullOrEmpty(entity.QueueName))
       {
-        response.Queues.Add(new QueueEntity()
-        {
-          QtyMsg = queue.CanRead ? queue.GetAllMessages().ToList().Count() : 0,
-          QueueName = queue.QueueName
-        });
+        var queuesFilter = queues
+                                .Where(q => q.QueueName.ToUpper().Contains(entity.QueueName.ToUpper()))
+                                .Select(x =>
+                                            new QueueEntity() 
+                                            { 
+                                              QtyMsg = x.CanRead ? x.GetAllMessages().ToList().Count() : 0, 
+                                              QueueName = x.QueueName
+                                            }).ToList();
+        if(queuesFilter != null)
+          response.Queues.AddRange(queuesFilter);
       }
-
+      else
+      {
+        foreach (MessageQueue queue in queues)
+        {
+          response.Queues.Add(new QueueEntity()
+          {
+            QtyMsg = queue.CanRead ? queue.GetAllMessages().ToList().Count() : 0,
+            QueueName = queue.QueueName
+          });
+        }
+      }
+      
       return response;
     }
 
