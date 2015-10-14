@@ -31,7 +31,8 @@ function successGetAll(data, textStatus, jqXHR) {
 
 function successGetAll(data) {
     console.log(data);
-    document.write(data);
+    //document.write(data);
+    $(".table-responsive").replaceWith('<div class="table-responsive">' + $(data).find('.table-responsive').html() + '</div>')
     $("#btnSearch").button('reset');
 }
 
@@ -47,9 +48,11 @@ function searchClickMechanism() {
         self.button('loading');
 
         var filterData = {
-            txtQueueName: $('#txtQueueName').val(),
+            txtQueueName: $('#txtQueueName').val().trim().replace(/(\r\n|\n|\r)/gm,""),
             chkIsPublic: $('#chkIsPublic').is(':checked')
         };
+
+        $(".table-responsive").empty();
 
         var queueServiceHelper = new QueueNS.QueueServiceHelper();
         queueServiceHelper.getAllFormSubmission($("#searchForm"), filterData, 'GET', successGetAll, null);
@@ -72,10 +75,18 @@ function purgeClickMechanism() {
             return false;
         }
 
+        var filterData;
+
         selectedQueues.each(function (index, element) {
 
             var elementChk = $(element);
 
+            filterData = {
+                txtQueueName: elementChk.parent().parent().find('[data-queue-name="true"]').text().trim().replace(/(\r\n|\n|\r)/gm, ""),
+                chkIsPublic: $('#chkIsPublic').is(':checked')
+            };
+
+            queues.push(filterData);
         });
 
         var queueServiceHelper = new QueueNS.QueueServiceHelper();

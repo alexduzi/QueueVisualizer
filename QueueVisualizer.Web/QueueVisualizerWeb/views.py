@@ -3,12 +3,15 @@ Routes and views for the flask application.
 """
 
 from datetime import datetime
-from flask import render_template, request 
+from flask import render_template, request, has_request_context
 from QueueVisualizerWeb import app
 from Infra.Queue_repository import Queue_repository as Repository
 from Models import OperationQueueRequest, OperationQueueResponse, Queue
+import re
 
-QUEUE_SERVICE = 'http://localhost:7789/QueueService.svc?wsdl'
+QUEUE_SERVICE = 'http://localhost:6668/QueueService.svc?wsdl'
+
+#QUEUE_SERVICE = 'http://localhost:52438/QueueService.svc?wsdl' # DEBUG
 
 @app.route('/')
 @app.route('/home')
@@ -18,7 +21,7 @@ def home():
     queueName = None
     isPublic = False
     if request.args:
-        queueName = request.args.get('txtQueueName')
+        queueName = re.sub('[\s+]', '', request.args.get('txtQueueName'))
         isPublic = request.args.get('chkIsPublic')
 
     repo = Repository(QUEUE_SERVICE)
@@ -32,14 +35,19 @@ def home():
         queueResult = result
     )
 
-@app.route('/purge/<queues>')
-def purge(queues):
+
+@app.route('/purge', methods=["POST"])
+def purge():
     """Renders the home page."""
 
-    repo = Repository(QUEUE_SERVICE)
-    repo.purge_queue(OperationQueueRequest(queue.isPublic, queue.queueName))
-    queue.queueName = ''
-    result = repo.get_queues(OperationQueueRequest(queue.isPublic, queue.queueName))
+    if request.json:
+        repo = Repository(QUEUE_SERVICE)
+        operationRequest = None
+        for queue in request.json:
+            operationRequest = OperationQueueRequest(queue['chkIsPublic'], queue['txtQueueName'])
+            repo.purge_queue(operationRequest)
+        
+    result = repo.get_queues(OperationQueueRequest(queue.isPublic, ''))
 
     return render_template(
         'index.html',
@@ -47,6 +55,7 @@ def purge(queues):
         year=datetime.now().year,
         queues = result
     )
+
 
 @app.route('/contact')
 def contact():

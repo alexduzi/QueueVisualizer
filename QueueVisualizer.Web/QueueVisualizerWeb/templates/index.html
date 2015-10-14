@@ -27,7 +27,7 @@
 <br />
 
 <div class="table-responsive">
-    <table class="table table-hover">
+    <table id="tableResults" class="table table-hover">
         <thead>
             <tr>
                 <th><input type="checkbox" name="" class="checkbox-inline" value="" data-selectall="true" /> </th>
@@ -43,7 +43,7 @@
                 <td>
                     <input type="checkbox" name="" value="" class="checkbox-inline" data-chkline="true" />
                 </td>
-                <td>
+                <td data-queue-name="true">
                     {{ queue.queueName }}
                 </td>
                 <td>

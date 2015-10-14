@@ -12,8 +12,9 @@ QueueNS.QueueServiceHelper = function () {
     function ajaxRequest(url, data, method, success, error) {
         $.ajax({
             url: url,
-            data: data,
-            dataType: "application/json",
+            data: JSON.stringify(data),
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
             method: method,
             success: function (data, textStatus, jqXHR) {
                 success(data, textStatus, jqXHR)
@@ -59,7 +60,7 @@ QueueNS.QueueServiceHelper = function () {
     };
 
     function purgeQueue(url, queues, success, error) {
-        ajaxRequest(url, { queues: queues}, "POST", success, error)
+        ajaxRequest(url, queues, "POST", success, error)
     };
 
     return {
