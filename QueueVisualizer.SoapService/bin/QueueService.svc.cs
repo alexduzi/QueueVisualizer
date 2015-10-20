@@ -23,9 +23,10 @@ namespace QueueVisualizer.SoapService
       return this.QueueRepository.GetAll(entity);
     }
 
-    public void Purge(Models.QueueOperationRequest entity)
+    public Models.QueueOperationResponse Purge(Models.QueueOperationRequest entity)
     {
       this.QueueRepository.Delete(entity);
+      return new Models.QueueOperationResponse();
     }
   }
 }

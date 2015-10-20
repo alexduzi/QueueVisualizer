@@ -25,5 +25,6 @@ class Queue_repository(object):
 
     def purge_queue(self, request):
         client = SoapClient(wsdl= self.wsdl, trace = False)
-        client.Purge(entity = { 'IsPublic': request.queue.isPublic, 'QueueName': request.queue.queueName })
-        
+        response = client.Purge(entity = { 'IsPublic': request.queue.isPublic, 'QueueName': request.queue.queueName })
+        #(entity = { 'IsPublic': request.queue.isPublic, 'QueueName': request.queue.queueName })
+        return True

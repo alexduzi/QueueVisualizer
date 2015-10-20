@@ -13,7 +13,7 @@ QueueNS.QueueServiceHelper = function () {
         $.ajax({
             url: url,
             data: JSON.stringify(data),
-            dataType: "json",
+            //dataType: "jsonp",
             contentType: "application/json; charset=utf-8",
             method: method,
             success: function (data, textStatus, jqXHR) {

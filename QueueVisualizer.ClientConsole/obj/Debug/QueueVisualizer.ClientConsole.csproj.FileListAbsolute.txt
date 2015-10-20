@@ -24,3 +24,13 @@ C:\Users\Duzi\Documents\Visual Studio 2013\Projects\QueueVisualizer\QueueVisuali
 C:\Users\Duzi\Documents\Visual Studio 2013\Projects\QueueVisualizer\QueueVisualizer.ClientConsole\obj\Debug\QueueVisualizer.ClientConsole.pdb
 C:\Users\Duzi\Documents\Visual Studio 2013\Projects\QueueVisualizer\QueueVisualizer.ClientConsole\bin\Debug\QueueService.svc
 C:\Users\Duzi\Documents\Visual Studio 2013\Projects\QueueVisualizer\QueueVisualizer.ClientConsole\bin\Debug\QueueService.svc.cs
+C:\Users\aduzi\Documents\Visual Studio 2013\Projects\QueueVisualizer\QueueVisualizer.ClientConsole\bin\Debug\QueueService.svc
+C:\Users\aduzi\Documents\Visual Studio 2013\Projects\QueueVisualizer\QueueVisualizer.ClientConsole\bin\Debug\QueueService.svc.cs
+C:\Users\aduzi\Documents\Visual Studio 2013\Projects\QueueVisualizer\QueueVisualizer.ClientConsole\bin\Debug\QueueVisualizer.ClientConsole.exe.config
+C:\Users\aduzi\Documents\Visual Studio 2013\Projects\QueueVisualizer\QueueVisualizer.ClientConsole\bin\Debug\QueueVisualizer.ClientConsole.exe
+C:\Users\aduzi\Documents\Visual Studio 2013\Projects\QueueVisualizer\QueueVisualizer.ClientConsole\bin\Debug\QueueVisualizer.ClientConsole.pdb
+C:\Users\aduzi\Documents\Visual Studio 2013\Projects\QueueVisualizer\QueueVisualizer.ClientConsole\bin\Debug\QueueVisualizer.SoapService.dll
+C:\Users\aduzi\Documents\Visual Studio 2013\Projects\QueueVisualizer\QueueVisualizer.ClientConsole\bin\Debug\QueueVisualizer.SoapService.pdb
+C:\Users\aduzi\Documents\Visual Studio 2013\Projects\QueueVisualizer\QueueVisualizer.ClientConsole\obj\Debug\QueueVisualizer.ClientConsole.csprojResolveAssemblyReference.cache
+C:\Users\aduzi\Documents\Visual Studio 2013\Projects\QueueVisualizer\QueueVisualizer.ClientConsole\obj\Debug\QueueVisualizer.ClientConsole.exe
+C:\Users\aduzi\Documents\Visual Studio 2013\Projects\QueueVisualizer\QueueVisualizer.ClientConsole\obj\Debug\QueueVisualizer.ClientConsole.pdb

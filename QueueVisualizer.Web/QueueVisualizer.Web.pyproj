@@ -54,6 +54,8 @@
   <ItemGroup>
     <Content Include="QueueVisualizerWeb\static\scripts\app_scripts\queuevisualizerinit.js" />
     <Content Include="QueueVisualizerWeb\static\scripts\app_scripts\servicehelper.js" />
+    <Content Include="QueueVisualizerWeb\templates\about.html" />
+    <Content Include="QueueVisualizerWeb\templates\contact.html" />
     <Content Include="requirements.txt" />
     <Content Include="QueueVisualizerWeb\static\content\bootstrap.css" />
     <Content Include="QueueVisualizerWeb\static\content\bootstrap.min.css" />
@@ -77,8 +79,6 @@
     <Content Include="QueueVisualizerWeb\static\scripts\respond.js" />
     <Content Include="QueueVisualizerWeb\static\scripts\respond.min.js" />
     <Content Include="QueueVisualizerWeb\static\scripts\_references.js" />
-    <Content Include="QueueVisualizerWeb\templates\about.html" />
-    <Content Include="QueueVisualizerWeb\templates\contact.html" />
     <Content Include="QueueVisualizerWeb\templates\index.html" />
     <Content Include="QueueVisualizerWeb\templates\layout.html" />
   </ItemGroup>

@@ -47,13 +47,13 @@ def purge():
             operationRequest = OperationQueueRequest(queue['chkIsPublic'], queue['txtQueueName'])
             repo.purge_queue(operationRequest)
         
-    result = repo.get_queues(OperationQueueRequest(queue.isPublic, ''))
+    result = repo.get_queues(OperationQueueRequest(False, ''))
 
     return render_template(
         'index.html',
         title='Home Page',
         year=datetime.now().year,
-        queues = result
+        queueResult = result
     )
 
 

@@ -16,7 +16,7 @@ namespace QueueVisualizer.SoapService
     QueueOperationResponse GetAll(QueueOperationRequest entity);
 
     [OperationContract]
-    void Purge(QueueOperationRequest entity);
+    QueueOperationResponse Purge(QueueOperationRequest entity);
   }
 
 

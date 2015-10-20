@@ -14,19 +14,16 @@ function showModal(msg) {
     $("#myModal").modal();
 }
 
-function successPurge(){
-
-    $("#btnSearch").button('reset');
+function successPurge(data) {
+    console.log(data);
+    //document.write(data);
+    $(".table-responsive").replaceWith('<div class="table-responsive">' + $(data).find('.table-responsive').html() + '</div>')
+    $("#btnPurge").button('reset');
 }
 
 function errorPurge(){
 
-    $("#btnSearch").button('reset');
-}
-
-function successGetAll(data, textStatus, jqXHR) {
-    console.log(data);
-    $("#btnSearch").button('reset');
+    $("#btnPurge").button('reset');
 }
 
 function successGetAll(data) {
