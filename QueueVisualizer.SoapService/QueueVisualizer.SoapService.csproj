@@ -68,6 +68,7 @@
   <ItemGroup>
     <Compile Include="IQueueServiceContract.cs" />
     <Compile Include="Models\QueueEntity.cs" />
+    <Compile Include="Models\QueueMessage.cs" />
     <Compile Include="Models\QueueOperationRequest.cs" />
     <Compile Include="Models\QueueOperationResponse.cs" />
     <Compile Include="Repository\Contract\IRepository.cs" />

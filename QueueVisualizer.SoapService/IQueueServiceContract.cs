@@ -17,6 +17,9 @@ namespace QueueVisualizer.SoapService
 
     [OperationContract]
     QueueOperationResponse Purge(QueueOperationRequest entity);
+
+    [OperationContract]
+    QueueOperationResponse PopulateData(Models.QueueOperationRequest entity);
   }
 
 

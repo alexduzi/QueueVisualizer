@@ -10,10 +10,18 @@ namespace QueueVisualizer.SoapService.Models
   [DataContract]
   public class QueueOperationRequest
   {
+    public QueueOperationRequest()
+    {
+      this.Message = new List<QueueMessage>();
+    }
+
     [DataMember]
     public bool IsPublic { get; set; }
 
     [DataMember]
     public string QueueName { get; set; }
+
+    [DataMember]
+    public List<QueueMessage> Message { get; set; }
   }
 }

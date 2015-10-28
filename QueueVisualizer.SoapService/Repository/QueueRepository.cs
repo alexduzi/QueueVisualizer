@@ -68,7 +68,18 @@ namespace QueueVisualizer.SoapService.Repository
 
     public void Insert(QueueOperationRequest entity)
     {
-      throw new NotImplementedException();
+      try
+      {
+        var msg = new List<System.Messaging.Message>();
+        using (MessageQueue mq = new MessageQueue(string.Format("FormatName:Direct=OS:.\\private$\\{0}", entity.QueueName)))
+        {
+          entity.Message.ForEach(x => msg.Add(new System.Messaging.Message() { Body = x.Value }));
+          msg.ForEach(m => mq.Send(m, MessageQueueTransactionType.Single));
+        }
+      }
+      catch (Exception)
+      {
+      }
     }
 
     public void Delete(QueueOperationRequest entity)

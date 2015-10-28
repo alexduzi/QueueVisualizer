@@ -28,5 +28,11 @@ namespace QueueVisualizer.SoapService
       this.QueueRepository.Delete(entity);
       return new Models.QueueOperationResponse();
     }
+
+    public Models.QueueOperationResponse PopulateData(Models.QueueOperationRequest entity)
+    {
+      this.QueueRepository.Insert(entity);
+      return new Models.QueueOperationResponse();
+    }
   }
 }
